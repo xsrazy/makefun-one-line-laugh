@@ -6,10 +6,10 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// The line, revised: trimmed "screen time report" to "says" and added
-// "today" for immediacy, so the punchline lands sooner.
+// The line, final polish: "for someone who" frames the six hours as an
+// achievement, which makes the excuse at the end land harder.
 const LINE =
-  "My phone says I spent six hours on social media today, which is impressive, since I only picked it up to check the time.";
+  "My phone says I spent six hours on social media today, which is impressive for someone who only picked it up to check the time.";
 
 const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outputDir, { recursive: true });
